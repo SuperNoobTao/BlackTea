@@ -23,7 +23,7 @@ public class Swagger2Config {
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(myApiInfo())
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("co.lilpilot.blog.controller"))
+                .apis(RequestHandlerSelectors.basePackage("cn.superliar.controller"))
                 .paths(PathSelectors.any())
                 .build();
     }
