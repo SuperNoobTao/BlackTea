@@ -30,9 +30,9 @@ public class Swagger2Config {
 
     private ApiInfo myApiInfo() {
         return new ApiInfoBuilder()
-                .title("MyBlog's rest api")
-                .description("from lilpilot")
-                .termsOfServiceUrl("http://blog.lilpilot.co")
+                .title("BlackTea-Blog's Api")
+                .description("from superliar")
+                .termsOfServiceUrl("http://superliar.cn")
                 .version("1.0")
                 .build();
     }
