@@ -7,6 +7,8 @@ import java.util.*;
 import cn.superliar.po.User;
 import io.swagger.annotations.*;
 import org.springframework.web.bind.annotation.*;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  *
@@ -20,10 +22,15 @@ import org.springframework.web.bind.annotation.*;
 public class UserController {
 
     static Map<Long, User> users = Collections.synchronizedMap(new HashMap<Long, User>());
+    private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
     @ApiOperation(value="获取用户列表", notes="")
     @RequestMapping(value={""}, method=RequestMethod.GET)
     public List<User> getUserList() {
+        logger.debug("This is a debug message");
+        logger.info("This is an info message");
+        logger.warn("This is a warn message");
+        logger.error("This is an error message");
         List<User> r = new ArrayList<User>(users.values());
         return r;
     }

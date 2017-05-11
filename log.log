@@ -1,0 +1,332 @@
+2017-05-11 15:16:21.857  INFO 56876 --- [main] cn.superliar.AbigaleApplication          : Starting AbigaleApplication on PC-201704131642 with PID 56876 (C:\Users\Administrator\IdeaProjects\BlackTea\target\classes started by Administrator in C:\Users\Administrator\IdeaProjects\BlackTea)
+2017-05-11 15:16:21.860  INFO 56876 --- [main] cn.superliar.AbigaleApplication          : No active profile set, falling back to default profiles: default
+2017-05-11 15:16:21.907  INFO 56876 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1d66ad3: startup date [Thu May 11 15:16:21 CST 2017]; root of context hierarchy
+2017-05-11 15:16:23.551  INFO 56876 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-05-11 15:16:23.559  INFO 56876 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-05-11 15:16:23.560  INFO 56876 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.14
+2017-05-11 15:16:23.659  INFO 56876 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-05-11 15:16:23.659  INFO 56876 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1755 ms
+2017-05-11 15:16:23.788  INFO 56876 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-05-11 15:16:23.793  INFO 56876 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-05-11 15:16:23.794  INFO 56876 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-05-11 15:16:23.794  INFO 56876 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-05-11 15:16:23.795  INFO 56876 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-05-11 15:16:24.366  INFO 56876 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users],methods=[GET]}" onto public java.util.List<cn.superliar.po.User> cn.superliar.controller.UserController.getUserList()
+2017-05-11 15:16:24.373  INFO 56876 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/{id}],methods=[DELETE]}" onto public java.lang.String cn.superliar.controller.UserController.deleteUser(java.lang.Long)
+2017-05-11 15:16:24.373  INFO 56876 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users],methods=[POST]}" onto public java.lang.String cn.superliar.controller.UserController.postUser(cn.superliar.po.User)
+2017-05-11 15:16:24.374  INFO 56876 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/{id}],methods=[GET]}" onto public cn.superliar.po.User cn.superliar.controller.UserController.getUser(java.lang.Long)
+2017-05-11 15:16:24.374  INFO 56876 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/{id}],methods=[PUT]}" onto public java.lang.String cn.superliar.controller.UserController.putUser(java.lang.Long,cn.superliar.po.User)
+2017-05-11 15:16:24.374  INFO 56876 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v2/api-docs],methods=[GET]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String)
+2017-05-11 15:16:24.376  INFO 56876 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2017-05-11 15:16:24.377  INFO 56876 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2017-05-11 15:16:24.378  INFO 56876 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2017-05-11 15:16:24.380  INFO 56876 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-05-11 15:16:24.380  INFO 56876 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-05-11 15:16:24.565  INFO 56876 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1d66ad3: startup date [Thu May 11 15:16:21 CST 2017]; root of context hierarchy
+2017-05-11 15:16:24.623  INFO 56876 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-11 15:16:24.623  INFO 56876 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-11 15:16:24.660  INFO 56876 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-11 15:16:24.841  INFO 56876 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-05-11 15:16:24.850  INFO 56876 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2017-05-11 15:16:24.863  INFO 56876 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found {0} custom documentation plugin(s)
+2017-05-11 15:16:24.870  INFO 56876 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2017-05-11 15:16:24.874  INFO 56876 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method deleteUser was user-controller
+2017-05-11 15:16:24.876  INFO 56876 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: deleteUser belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=cn.superliar.controller.UserController}]] 
+2017-05-11 15:16:24.876  INFO 56876 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getUser was user-controller
+2017-05-11 15:16:24.876  INFO 56876 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: getUser belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=cn.superliar.controller.UserController}]] 
+2017-05-11 15:16:24.877  INFO 56876 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method putUser was user-controller
+2017-05-11 15:16:24.877  INFO 56876 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: putUser belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=cn.superliar.controller.UserController}]] 
+2017-05-11 15:16:24.877  INFO 56876 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getUserList was user-controller
+2017-05-11 15:16:24.877  INFO 56876 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: getUserList belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=cn.superliar.controller.UserController}]] 
+2017-05-11 15:16:24.878  INFO 56876 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method postUser was user-controller
+2017-05-11 15:16:24.878  INFO 56876 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: postUser belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=cn.superliar.controller.UserController}]] 
+2017-05-11 15:16:24.880  INFO 56876 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Created resource listing Path: /default/user-controller Description: user-controller Position: 0
+2017-05-11 15:16:24.897  INFO 56876 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2017-05-11 15:16:24.897  INFO 56876 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.lang.String(true)
+2017-05-11 15:16:24.903  INFO 56876 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2017-05-11 15:16:24.904  INFO 56876 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2017-05-11 15:16:24.912  INFO 56876 --- [main] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /users/{id}.cn.superliar.controller.UserController.deleteUser.DefaultGenericTypeNamingStrategy
+2017-05-11 15:16:24.913  INFO 56876 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /users/{id}.cn.superliar.controller.UserController.deleteUser.DefaultGenericTypeNamingStrategy
+2017-05-11 15:16:24.926  INFO 56876 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method deleteUser was user-controller
+2017-05-11 15:16:24.936  INFO 56876 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method deleteUser was user-controller
+2017-05-11 15:16:24.944  INFO 56876 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: cn.superliar.po.User(true)
+2017-05-11 15:16:24.945  INFO 56876 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key cn.superliar.po.User(true)
+2017-05-11 15:16:24.946  INFO 56876 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: cn.superliar.po.User(true)
+2017-05-11 15:16:24.946  INFO 56876 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key cn.superliar.po.User(true)
+2017-05-11 15:16:24.970  INFO 56876 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: cn.superliar.po.User(true)
+2017-05-11 15:16:24.970  INFO 56876 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key cn.superliar.po.User(true)
+2017-05-11 15:16:24.971  INFO 56876 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: cn.superliar.po.User(true)
+2017-05-11 15:16:24.971  INFO 56876 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key cn.superliar.po.User(true)
+2017-05-11 15:16:24.972  INFO 56876 --- [main] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /users/{id}.cn.superliar.controller.UserController.getUser.DefaultGenericTypeNamingStrategy
+2017-05-11 15:16:24.972  INFO 56876 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /users/{id}.cn.superliar.controller.UserController.getUser.DefaultGenericTypeNamingStrategy
+2017-05-11 15:16:24.973  INFO 56876 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getUser was user-controller
+2017-05-11 15:16:24.974  INFO 56876 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getUser was user-controller
+2017-05-11 15:16:24.976  INFO 56876 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.util.List<cn.superliar.po.User>(true)
+2017-05-11 15:16:24.976  INFO 56876 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.util.List<cn.superliar.po.User>(true)
+2017-05-11 15:16:24.977  INFO 56876 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.util.List<cn.superliar.po.User>(true)
+2017-05-11 15:16:24.977  INFO 56876 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.util.List<cn.superliar.po.User>(true)
+2017-05-11 15:16:24.977  INFO 56876 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: cn.superliar.po.User(true)
+2017-05-11 15:16:24.977  INFO 56876 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key cn.superliar.po.User(true)
+2017-05-11 15:16:24.977  INFO 56876 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: java.util.List<cn.superliar.po.User>(true)
+2017-05-11 15:16:24.977  INFO 56876 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key java.util.List<cn.superliar.po.User>(true)
+2017-05-11 15:16:24.978  INFO 56876 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: cn.superliar.po.User(true)
+2017-05-11 15:16:24.978  INFO 56876 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key cn.superliar.po.User(true)
+2017-05-11 15:16:24.979  INFO 56876 --- [main] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /users.cn.superliar.controller.UserController.getUserList.DefaultGenericTypeNamingStrategy
+2017-05-11 15:16:24.979  INFO 56876 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /users.cn.superliar.controller.UserController.getUserList.DefaultGenericTypeNamingStrategy
+2017-05-11 15:16:24.980  INFO 56876 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getUserList was user-controller
+2017-05-11 15:16:24.981  INFO 56876 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getUserList was user-controller
+2017-05-11 15:16:24.983  INFO 56876 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2017-05-11 15:16:24.983  INFO 56876 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.lang.String(true)
+2017-05-11 15:16:24.983  INFO 56876 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2017-05-11 15:16:24.983  INFO 56876 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2017-05-11 15:16:24.984  INFO 56876 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: cn.superliar.po.User(false)
+2017-05-11 15:16:24.984  INFO 56876 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key cn.superliar.po.User(false)
+2017-05-11 15:16:24.984  INFO 56876 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: cn.superliar.po.User(false)
+2017-05-11 15:16:24.984  INFO 56876 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key cn.superliar.po.User(false)
+2017-05-11 15:16:24.986  INFO 56876 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: cn.superliar.po.User(false)
+2017-05-11 15:16:24.987  INFO 56876 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key cn.superliar.po.User(false)
+2017-05-11 15:16:24.987  INFO 56876 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: cn.superliar.po.User(false)
+2017-05-11 15:16:24.987  INFO 56876 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key cn.superliar.po.User(false)
+2017-05-11 15:16:24.987  INFO 56876 --- [main] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /users.cn.superliar.controller.UserController.postUser.DefaultGenericTypeNamingStrategy
+2017-05-11 15:16:24.987  INFO 56876 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /users.cn.superliar.controller.UserController.postUser.DefaultGenericTypeNamingStrategy
+2017-05-11 15:16:24.989  INFO 56876 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method postUser was user-controller
+2017-05-11 15:16:24.990  INFO 56876 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method postUser was user-controller
+2017-05-11 15:16:24.991  INFO 56876 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2017-05-11 15:16:24.991  INFO 56876 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.lang.String(true)
+2017-05-11 15:16:24.991  INFO 56876 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2017-05-11 15:16:24.991  INFO 56876 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2017-05-11 15:16:24.991  INFO 56876 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: cn.superliar.po.User(false)
+2017-05-11 15:16:24.992  INFO 56876 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key cn.superliar.po.User(false)
+2017-05-11 15:16:24.992  INFO 56876 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: cn.superliar.po.User(false)
+2017-05-11 15:16:24.992  INFO 56876 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key cn.superliar.po.User(false)
+2017-05-11 15:16:24.992  INFO 56876 --- [main] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /users/{id}.cn.superliar.controller.UserController.putUser.DefaultGenericTypeNamingStrategy
+2017-05-11 15:16:24.992  INFO 56876 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /users/{id}.cn.superliar.controller.UserController.putUser.DefaultGenericTypeNamingStrategy
+2017-05-11 15:16:24.996  INFO 56876 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method putUser was user-controller
+2017-05-11 15:16:24.997  INFO 56876 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method putUser was user-controller
+2017-05-11 15:16:25.045  INFO 56876 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-05-11 15:16:25.049  INFO 56876 --- [main] cn.superliar.AbigaleApplication          : Started AbigaleApplication in 3.484 seconds (JVM running for 3.84)
+2017-05-11 15:17:08.467  INFO 56876 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-05-11 15:17:08.467  INFO 56876 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-05-11 15:17:08.484  INFO 56876 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+2017-05-11 15:17:08.508 DEBUG 56876 --- [http-nio-8080-exec-1] cn.superliar.controller.UserController   : This is an info message
+2017-05-11 15:18:24.554  INFO 47340 --- [main] cn.superliar.AbigaleApplication          : Starting AbigaleApplication on PC-201704131642 with PID 47340 (C:\Users\Administrator\IdeaProjects\BlackTea\target\classes started by Administrator in C:\Users\Administrator\IdeaProjects\BlackTea)
+2017-05-11 15:18:24.559  INFO 47340 --- [main] cn.superliar.AbigaleApplication          : No active profile set, falling back to default profiles: default
+2017-05-11 15:18:24.598  INFO 47340 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1d66ad3: startup date [Thu May 11 15:18:24 CST 2017]; root of context hierarchy
+2017-05-11 15:18:26.324  INFO 47340 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-05-11 15:18:26.336  INFO 47340 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-05-11 15:18:26.338  INFO 47340 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.14
+2017-05-11 15:18:26.465  INFO 47340 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-05-11 15:18:26.465  INFO 47340 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1869 ms
+2017-05-11 15:18:26.617  INFO 47340 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-05-11 15:18:26.621  INFO 47340 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-05-11 15:18:26.621  INFO 47340 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-05-11 15:18:26.621  INFO 47340 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-05-11 15:18:26.622  INFO 47340 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-05-11 15:18:27.260  INFO 47340 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users],methods=[POST]}" onto public java.lang.String cn.superliar.controller.UserController.postUser(cn.superliar.po.User)
+2017-05-11 15:18:27.261  INFO 47340 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/{id}],methods=[GET]}" onto public cn.superliar.po.User cn.superliar.controller.UserController.getUser(java.lang.Long)
+2017-05-11 15:18:27.261  INFO 47340 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users],methods=[GET]}" onto public java.util.List<cn.superliar.po.User> cn.superliar.controller.UserController.getUserList()
+2017-05-11 15:18:27.262  INFO 47340 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/{id}],methods=[DELETE]}" onto public java.lang.String cn.superliar.controller.UserController.deleteUser(java.lang.Long)
+2017-05-11 15:18:27.262  INFO 47340 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/{id}],methods=[PUT]}" onto public java.lang.String cn.superliar.controller.UserController.putUser(java.lang.Long,cn.superliar.po.User)
+2017-05-11 15:18:27.263  INFO 47340 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v2/api-docs],methods=[GET]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String)
+2017-05-11 15:18:27.265  INFO 47340 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2017-05-11 15:18:27.266  INFO 47340 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2017-05-11 15:18:27.266  INFO 47340 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2017-05-11 15:18:27.269  INFO 47340 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-05-11 15:18:27.269  INFO 47340 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-05-11 15:18:27.465  INFO 47340 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1d66ad3: startup date [Thu May 11 15:18:24 CST 2017]; root of context hierarchy
+2017-05-11 15:18:27.523  INFO 47340 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-11 15:18:27.523  INFO 47340 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-11 15:18:27.568  INFO 47340 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-11 15:18:27.747  INFO 47340 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-05-11 15:18:27.761  INFO 47340 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2017-05-11 15:18:27.775  INFO 47340 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found {0} custom documentation plugin(s)
+2017-05-11 15:18:27.783  INFO 47340 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2017-05-11 15:18:27.788  INFO 47340 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getUser was user-controller
+2017-05-11 15:18:27.789  INFO 47340 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: getUser belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=cn.superliar.controller.UserController}]] 
+2017-05-11 15:18:27.790  INFO 47340 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method deleteUser was user-controller
+2017-05-11 15:18:27.791  INFO 47340 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: deleteUser belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=cn.superliar.controller.UserController}]] 
+2017-05-11 15:18:27.791  INFO 47340 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method putUser was user-controller
+2017-05-11 15:18:27.791  INFO 47340 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: putUser belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=cn.superliar.controller.UserController}]] 
+2017-05-11 15:18:27.792  INFO 47340 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method postUser was user-controller
+2017-05-11 15:18:27.792  INFO 47340 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: postUser belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=cn.superliar.controller.UserController}]] 
+2017-05-11 15:18:27.792  INFO 47340 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getUserList was user-controller
+2017-05-11 15:18:27.792  INFO 47340 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: getUserList belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=cn.superliar.controller.UserController}]] 
+2017-05-11 15:18:27.796  INFO 47340 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Created resource listing Path: /default/user-controller Description: user-controller Position: 0
+2017-05-11 15:18:27.815  INFO 47340 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2017-05-11 15:18:27.815  INFO 47340 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.lang.String(true)
+2017-05-11 15:18:27.818  INFO 47340 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2017-05-11 15:18:27.818  INFO 47340 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2017-05-11 15:18:27.824  INFO 47340 --- [main] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /users/{id}.cn.superliar.controller.UserController.deleteUser.DefaultGenericTypeNamingStrategy
+2017-05-11 15:18:27.825  INFO 47340 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /users/{id}.cn.superliar.controller.UserController.deleteUser.DefaultGenericTypeNamingStrategy
+2017-05-11 15:18:27.838  INFO 47340 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method deleteUser was user-controller
+2017-05-11 15:18:27.850  INFO 47340 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method deleteUser was user-controller
+2017-05-11 15:18:27.863  INFO 47340 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: cn.superliar.po.User(true)
+2017-05-11 15:18:27.863  INFO 47340 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key cn.superliar.po.User(true)
+2017-05-11 15:18:27.865  INFO 47340 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: cn.superliar.po.User(true)
+2017-05-11 15:18:27.865  INFO 47340 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key cn.superliar.po.User(true)
+2017-05-11 15:18:27.891  INFO 47340 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: cn.superliar.po.User(true)
+2017-05-11 15:18:27.891  INFO 47340 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key cn.superliar.po.User(true)
+2017-05-11 15:18:27.891  INFO 47340 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: cn.superliar.po.User(true)
+2017-05-11 15:18:27.891  INFO 47340 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key cn.superliar.po.User(true)
+2017-05-11 15:18:27.892  INFO 47340 --- [main] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /users/{id}.cn.superliar.controller.UserController.getUser.DefaultGenericTypeNamingStrategy
+2017-05-11 15:18:27.892  INFO 47340 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /users/{id}.cn.superliar.controller.UserController.getUser.DefaultGenericTypeNamingStrategy
+2017-05-11 15:18:27.893  INFO 47340 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getUser was user-controller
+2017-05-11 15:18:27.894  INFO 47340 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getUser was user-controller
+2017-05-11 15:18:27.896  INFO 47340 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.util.List<cn.superliar.po.User>(true)
+2017-05-11 15:18:27.897  INFO 47340 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.util.List<cn.superliar.po.User>(true)
+2017-05-11 15:18:27.897  INFO 47340 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.util.List<cn.superliar.po.User>(true)
+2017-05-11 15:18:27.897  INFO 47340 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.util.List<cn.superliar.po.User>(true)
+2017-05-11 15:18:27.897  INFO 47340 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: cn.superliar.po.User(true)
+2017-05-11 15:18:27.898  INFO 47340 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key cn.superliar.po.User(true)
+2017-05-11 15:18:27.898  INFO 47340 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: java.util.List<cn.superliar.po.User>(true)
+2017-05-11 15:18:27.898  INFO 47340 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key java.util.List<cn.superliar.po.User>(true)
+2017-05-11 15:18:27.899  INFO 47340 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: cn.superliar.po.User(true)
+2017-05-11 15:18:27.899  INFO 47340 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key cn.superliar.po.User(true)
+2017-05-11 15:18:27.899  INFO 47340 --- [main] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /users.cn.superliar.controller.UserController.getUserList.DefaultGenericTypeNamingStrategy
+2017-05-11 15:18:27.899  INFO 47340 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /users.cn.superliar.controller.UserController.getUserList.DefaultGenericTypeNamingStrategy
+2017-05-11 15:18:27.900  INFO 47340 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getUserList was user-controller
+2017-05-11 15:18:27.901  INFO 47340 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getUserList was user-controller
+2017-05-11 15:18:27.902  INFO 47340 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2017-05-11 15:18:27.903  INFO 47340 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.lang.String(true)
+2017-05-11 15:18:27.903  INFO 47340 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2017-05-11 15:18:27.903  INFO 47340 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2017-05-11 15:18:27.903  INFO 47340 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: cn.superliar.po.User(false)
+2017-05-11 15:18:27.903  INFO 47340 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key cn.superliar.po.User(false)
+2017-05-11 15:18:27.903  INFO 47340 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: cn.superliar.po.User(false)
+2017-05-11 15:18:27.903  INFO 47340 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key cn.superliar.po.User(false)
+2017-05-11 15:18:27.906  INFO 47340 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: cn.superliar.po.User(false)
+2017-05-11 15:18:27.906  INFO 47340 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key cn.superliar.po.User(false)
+2017-05-11 15:18:27.906  INFO 47340 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: cn.superliar.po.User(false)
+2017-05-11 15:18:27.906  INFO 47340 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key cn.superliar.po.User(false)
+2017-05-11 15:18:27.906  INFO 47340 --- [main] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /users.cn.superliar.controller.UserController.postUser.DefaultGenericTypeNamingStrategy
+2017-05-11 15:18:27.906  INFO 47340 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /users.cn.superliar.controller.UserController.postUser.DefaultGenericTypeNamingStrategy
+2017-05-11 15:18:27.908  INFO 47340 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method postUser was user-controller
+2017-05-11 15:18:27.909  INFO 47340 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method postUser was user-controller
+2017-05-11 15:18:27.912  INFO 47340 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2017-05-11 15:18:27.912  INFO 47340 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.lang.String(true)
+2017-05-11 15:18:27.912  INFO 47340 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2017-05-11 15:18:27.913  INFO 47340 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2017-05-11 15:18:27.913  INFO 47340 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: cn.superliar.po.User(false)
+2017-05-11 15:18:27.913  INFO 47340 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key cn.superliar.po.User(false)
+2017-05-11 15:18:27.913  INFO 47340 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: cn.superliar.po.User(false)
+2017-05-11 15:18:27.913  INFO 47340 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key cn.superliar.po.User(false)
+2017-05-11 15:18:27.913  INFO 47340 --- [main] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /users/{id}.cn.superliar.controller.UserController.putUser.DefaultGenericTypeNamingStrategy
+2017-05-11 15:18:27.913  INFO 47340 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /users/{id}.cn.superliar.controller.UserController.putUser.DefaultGenericTypeNamingStrategy
+2017-05-11 15:18:27.916  INFO 47340 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method putUser was user-controller
+2017-05-11 15:18:27.918  INFO 47340 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method putUser was user-controller
+2017-05-11 15:18:27.966  INFO 47340 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-05-11 15:18:27.971  INFO 47340 --- [main] cn.superliar.AbigaleApplication          : Started AbigaleApplication in 3.715 seconds (JVM running for 4.071)
+2017-05-11 15:19:52.555  INFO 54724 --- [main] cn.superliar.AbigaleApplication          : Starting AbigaleApplication on PC-201704131642 with PID 54724 (C:\Users\Administrator\IdeaProjects\BlackTea\target\classes started by Administrator in C:\Users\Administrator\IdeaProjects\BlackTea)
+2017-05-11 15:19:52.558  INFO 54724 --- [main] cn.superliar.AbigaleApplication          : No active profile set, falling back to default profiles: default
+2017-05-11 15:19:52.610  INFO 54724 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1d66ad3: startup date [Thu May 11 15:19:52 CST 2017]; root of context hierarchy
+2017-05-11 15:19:54.221  INFO 54724 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-05-11 15:19:54.229  INFO 54724 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-05-11 15:19:54.230  INFO 54724 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.14
+2017-05-11 15:19:54.307  INFO 54724 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-05-11 15:19:54.307  INFO 54724 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1700 ms
+2017-05-11 15:19:54.425  INFO 54724 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-05-11 15:19:54.429  INFO 54724 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-05-11 15:19:54.429  INFO 54724 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-05-11 15:19:54.429  INFO 54724 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-05-11 15:19:54.430  INFO 54724 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-05-11 15:19:54.972  INFO 54724 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/{id}],methods=[PUT]}" onto public java.lang.String cn.superliar.controller.UserController.putUser(java.lang.Long,cn.superliar.po.User)
+2017-05-11 15:19:54.973  INFO 54724 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users],methods=[POST]}" onto public java.lang.String cn.superliar.controller.UserController.postUser(cn.superliar.po.User)
+2017-05-11 15:19:54.973  INFO 54724 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/{id}],methods=[GET]}" onto public cn.superliar.po.User cn.superliar.controller.UserController.getUser(java.lang.Long)
+2017-05-11 15:19:54.974  INFO 54724 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users],methods=[GET]}" onto public java.util.List<cn.superliar.po.User> cn.superliar.controller.UserController.getUserList()
+2017-05-11 15:19:54.974  INFO 54724 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/{id}],methods=[DELETE]}" onto public java.lang.String cn.superliar.controller.UserController.deleteUser(java.lang.Long)
+2017-05-11 15:19:54.974  INFO 54724 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v2/api-docs],methods=[GET]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String)
+2017-05-11 15:19:54.977  INFO 54724 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2017-05-11 15:19:54.977  INFO 54724 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2017-05-11 15:19:54.978  INFO 54724 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2017-05-11 15:19:54.982  INFO 54724 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-05-11 15:19:54.982  INFO 54724 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-05-11 15:19:55.166  INFO 54724 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1d66ad3: startup date [Thu May 11 15:19:52 CST 2017]; root of context hierarchy
+2017-05-11 15:19:55.223  INFO 54724 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-11 15:19:55.223  INFO 54724 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-11 15:19:55.268  INFO 54724 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-11 15:19:55.431  INFO 54724 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-05-11 15:19:55.445  INFO 54724 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2017-05-11 15:19:55.462  INFO 54724 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found {0} custom documentation plugin(s)
+2017-05-11 15:19:55.470  INFO 54724 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2017-05-11 15:19:55.474  INFO 54724 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method putUser was user-controller
+2017-05-11 15:19:55.475  INFO 54724 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: putUser belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=cn.superliar.controller.UserController}]] 
+2017-05-11 15:19:55.476  INFO 54724 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getUser was user-controller
+2017-05-11 15:19:55.476  INFO 54724 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: getUser belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=cn.superliar.controller.UserController}]] 
+2017-05-11 15:19:55.477  INFO 54724 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method deleteUser was user-controller
+2017-05-11 15:19:55.477  INFO 54724 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: deleteUser belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=cn.superliar.controller.UserController}]] 
+2017-05-11 15:19:55.477  INFO 54724 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method postUser was user-controller
+2017-05-11 15:19:55.477  INFO 54724 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: postUser belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=cn.superliar.controller.UserController}]] 
+2017-05-11 15:19:55.478  INFO 54724 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getUserList was user-controller
+2017-05-11 15:19:55.478  INFO 54724 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: getUserList belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=cn.superliar.controller.UserController}]] 
+2017-05-11 15:19:55.481  INFO 54724 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Created resource listing Path: /default/user-controller Description: user-controller Position: 0
+2017-05-11 15:19:55.501  INFO 54724 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2017-05-11 15:19:55.501  INFO 54724 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.lang.String(true)
+2017-05-11 15:19:55.504  INFO 54724 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2017-05-11 15:19:55.504  INFO 54724 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2017-05-11 15:19:55.510  INFO 54724 --- [main] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /users/{id}.cn.superliar.controller.UserController.deleteUser.DefaultGenericTypeNamingStrategy
+2017-05-11 15:19:55.511  INFO 54724 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /users/{id}.cn.superliar.controller.UserController.deleteUser.DefaultGenericTypeNamingStrategy
+2017-05-11 15:19:55.524  INFO 54724 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method deleteUser was user-controller
+2017-05-11 15:19:55.536  INFO 54724 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method deleteUser was user-controller
+2017-05-11 15:19:55.542  INFO 54724 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: cn.superliar.po.User(true)
+2017-05-11 15:19:55.543  INFO 54724 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key cn.superliar.po.User(true)
+2017-05-11 15:19:55.544  INFO 54724 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: cn.superliar.po.User(true)
+2017-05-11 15:19:55.544  INFO 54724 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key cn.superliar.po.User(true)
+2017-05-11 15:19:55.572  INFO 54724 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: cn.superliar.po.User(true)
+2017-05-11 15:19:55.572  INFO 54724 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key cn.superliar.po.User(true)
+2017-05-11 15:19:55.573  INFO 54724 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: cn.superliar.po.User(true)
+2017-05-11 15:19:55.573  INFO 54724 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key cn.superliar.po.User(true)
+2017-05-11 15:19:55.573  INFO 54724 --- [main] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /users/{id}.cn.superliar.controller.UserController.getUser.DefaultGenericTypeNamingStrategy
+2017-05-11 15:19:55.573  INFO 54724 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /users/{id}.cn.superliar.controller.UserController.getUser.DefaultGenericTypeNamingStrategy
+2017-05-11 15:19:55.575  INFO 54724 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getUser was user-controller
+2017-05-11 15:19:55.576  INFO 54724 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getUser was user-controller
+2017-05-11 15:19:55.578  INFO 54724 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.util.List<cn.superliar.po.User>(true)
+2017-05-11 15:19:55.578  INFO 54724 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.util.List<cn.superliar.po.User>(true)
+2017-05-11 15:19:55.579  INFO 54724 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.util.List<cn.superliar.po.User>(true)
+2017-05-11 15:19:55.579  INFO 54724 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.util.List<cn.superliar.po.User>(true)
+2017-05-11 15:19:55.579  INFO 54724 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: cn.superliar.po.User(true)
+2017-05-11 15:19:55.579  INFO 54724 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key cn.superliar.po.User(true)
+2017-05-11 15:19:55.579  INFO 54724 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: java.util.List<cn.superliar.po.User>(true)
+2017-05-11 15:19:55.580  INFO 54724 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key java.util.List<cn.superliar.po.User>(true)
+2017-05-11 15:19:55.580  INFO 54724 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: cn.superliar.po.User(true)
+2017-05-11 15:19:55.581  INFO 54724 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key cn.superliar.po.User(true)
+2017-05-11 15:19:55.581  INFO 54724 --- [main] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /users.cn.superliar.controller.UserController.getUserList.DefaultGenericTypeNamingStrategy
+2017-05-11 15:19:55.581  INFO 54724 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /users.cn.superliar.controller.UserController.getUserList.DefaultGenericTypeNamingStrategy
+2017-05-11 15:19:55.582  INFO 54724 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getUserList was user-controller
+2017-05-11 15:19:55.583  INFO 54724 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getUserList was user-controller
+2017-05-11 15:19:55.585  INFO 54724 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2017-05-11 15:19:55.585  INFO 54724 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.lang.String(true)
+2017-05-11 15:19:55.586  INFO 54724 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2017-05-11 15:19:55.586  INFO 54724 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2017-05-11 15:19:55.586  INFO 54724 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: cn.superliar.po.User(false)
+2017-05-11 15:19:55.586  INFO 54724 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key cn.superliar.po.User(false)
+2017-05-11 15:19:55.586  INFO 54724 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: cn.superliar.po.User(false)
+2017-05-11 15:19:55.586  INFO 54724 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key cn.superliar.po.User(false)
+2017-05-11 15:19:55.590  INFO 54724 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: cn.superliar.po.User(false)
+2017-05-11 15:19:55.590  INFO 54724 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key cn.superliar.po.User(false)
+2017-05-11 15:19:55.590  INFO 54724 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: cn.superliar.po.User(false)
+2017-05-11 15:19:55.590  INFO 54724 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key cn.superliar.po.User(false)
+2017-05-11 15:19:55.590  INFO 54724 --- [main] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /users.cn.superliar.controller.UserController.postUser.DefaultGenericTypeNamingStrategy
+2017-05-11 15:19:55.591  INFO 54724 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /users.cn.superliar.controller.UserController.postUser.DefaultGenericTypeNamingStrategy
+2017-05-11 15:19:55.593  INFO 54724 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method postUser was user-controller
+2017-05-11 15:19:55.594  INFO 54724 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method postUser was user-controller
+2017-05-11 15:19:55.595  INFO 54724 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2017-05-11 15:19:55.595  INFO 54724 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.lang.String(true)
+2017-05-11 15:19:55.595  INFO 54724 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2017-05-11 15:19:55.595  INFO 54724 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2017-05-11 15:19:55.595  INFO 54724 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: cn.superliar.po.User(false)
+2017-05-11 15:19:55.596  INFO 54724 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key cn.superliar.po.User(false)
+2017-05-11 15:19:55.596  INFO 54724 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: cn.superliar.po.User(false)
+2017-05-11 15:19:55.596  INFO 54724 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key cn.superliar.po.User(false)
+2017-05-11 15:19:55.596  INFO 54724 --- [main] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /users/{id}.cn.superliar.controller.UserController.putUser.DefaultGenericTypeNamingStrategy
+2017-05-11 15:19:55.596  INFO 54724 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /users/{id}.cn.superliar.controller.UserController.putUser.DefaultGenericTypeNamingStrategy
+2017-05-11 15:19:55.598  INFO 54724 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method putUser was user-controller
+2017-05-11 15:19:55.599  INFO 54724 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method putUser was user-controller
+2017-05-11 15:19:55.645  INFO 54724 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-05-11 15:19:55.650  INFO 54724 --- [main] cn.superliar.AbigaleApplication          : Started AbigaleApplication in 3.4 seconds (JVM running for 3.932)
+2017-05-11 15:20:08.700  INFO 54724 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-05-11 15:20:08.700  INFO 54724 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-05-11 15:20:08.720  INFO 54724 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+2017-05-11 15:20:08.735 DEBUG 54724 --- [http-nio-8080-exec-1] cn.superliar.controller.UserController   : This is a debug message
+2017-05-11 15:20:08.736  INFO 54724 --- [http-nio-8080-exec-1] cn.superliar.controller.UserController   : This is an info message
+2017-05-11 15:20:08.736  WARN 54724 --- [http-nio-8080-exec-1] cn.superliar.controller.UserController   : This is a warn message
+2017-05-11 15:20:08.736 ERROR 54724 --- [http-nio-8080-exec-1] cn.superliar.controller.UserController   : This is an error message
