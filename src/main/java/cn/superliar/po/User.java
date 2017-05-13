@@ -1,6 +1,6 @@
 package cn.superliar.po;
 
-import cn.superliar.common.BaseBean;
+import cn.superliar.common.BaseEntity;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -11,7 +11,7 @@ import lombok.ToString;
 @Getter
 @Setter
 @ToString
-public class User extends BaseBean{
+public class User extends BaseEntity {
 
     private Long id;
 

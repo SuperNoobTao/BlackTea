@@ -6,10 +6,10 @@ import java.util.Date;
 /**
  * Created by Administrator on 2017/5/8.
  */
-public class BaseBean  implements Serializable {
+public class BaseEntity implements Serializable {
 
     /**
-     * BaseBean.java
+     * BaseEntity.java
      */
     private static final long serialVersionUID = 2117622093828850506L;
 

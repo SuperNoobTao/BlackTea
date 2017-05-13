@@ -1,0 +1,26 @@
+#logging.file=log.log
+#logging.level.cn.superliar.controller = debug
+
+#设置环境，改变值来启动不同的环境
+spring:
+  profiles:
+    active: dev
+#如果application.properties的配置改为：spring.profiles.active=prod，则结果是：prod_envrimont
+#如果application.properties的配置改为：spring.profiles.active=prod，而application.properties中也配置了profile=xxx（不管该配置配置在spring.profiles.active=prod的上方还是下方），这个时候结果是：prod_envrimont
+#如果application.properties的配置改为：spring.profiles.active=prod，而application.properties中也配置了profile=xxx（不管该配置配置在spring.profiles.active=prod的上方还是下方），但是application-prod.properties删掉了profile = prod_envrimont，这个时候结果是：xxx
+
+
+# 配置redis
+jedis:
+  pool:
+    host: 20.26.26.51
+    port: 6379
+    config:
+      maxTotal: 100
+      maxIdle: 10
+      maxWaitMillis: 100000
+
+# ===============================
+# = LOGS
+# ===============================
+logging.file: data/logs/core.log
