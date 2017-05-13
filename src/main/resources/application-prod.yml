@@ -35,6 +35,7 @@ spring:
 #    schema: classpath:db/blacktea_blog.sql
 #    data: classpath:db/data.sql
 # Show or not log for each sql query
+
   jpa:
     show-sql: true
 # Hibernate ddl auto (create, create-drop, update): with "update" the database

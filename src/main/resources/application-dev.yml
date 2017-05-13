@@ -25,6 +25,8 @@ spring:
           remove-abandoned-timeout: 180
 #    schema: classpath:db/blacktea_blog.sql
 #    data: classpath:db/data.sql
+
+
 # Show or not log for each sql query
   jpa:
     show-sql: true
@@ -48,7 +50,5 @@ spring:
     console:
       settings.web-allow-others: true
       enabled: true
-
-
 
 

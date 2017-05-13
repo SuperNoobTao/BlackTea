@@ -24,3 +24,9 @@ jedis:
 # = LOGS
 # ===============================
 logging.file: data/logs/core.log
+
+
+# mybatis
+mybatis:
+  mapperLocations: classpath:mybatis/*.xml
+  typeAliasesPackage: cn.superliar.po
