@@ -4,33 +4,25 @@ package cn.superliar.controller;
 
 import java.util.*;
 
+import cn.superliar.po.TbUserEntity;
 import cn.superliar.po.User;
+import cn.superliar.service.UserService;
 import io.swagger.annotations.*;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-/**
- *
- * @author 程序猿DD
- * @version 1.0.0
- * @blog http://blog.didispace.com
- *
- */
+
 @RestController
 @RequestMapping(value="/users")     // 通过这里配置使下面的映射都在/users下，可去除
 public class UserController {
 
     static Map<Long, User> users = Collections.synchronizedMap(new HashMap<Long, User>());
-    private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
     @ApiOperation(value="获取用户列表", notes="")
     @RequestMapping(value={""}, method=RequestMethod.GET)
     public List<User> getUserList() {
-        logger.debug("This is a debug message");
-        logger.info("This is an info message");
-        logger.warn("This is a warn message");
-        logger.error("This is an error message");
         List<User> r = new ArrayList<User>(users.values());
         return r;
     }
