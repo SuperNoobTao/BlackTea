@@ -2,14 +2,14 @@ profile:
   dev_envrimont
 
 
-server.port: 8080
+server.port: 8081
 
 spring:
   datasource:
-    url: jdbc:h2:mem:test
+    url: jdbc:h2:mem:blacktea_blog
     driver-class-name: org.h2.Driver
     username: root
-    password: 123456
+    password: zucc
     tomcat:
           initial-size: 10
           max-idle: 60
@@ -24,7 +24,7 @@ spring:
           remove-abandoned: true
           remove-abandoned-timeout: 180
 #    schema: classpath:db/blacktea_blog.sql
-#    data: classpath:db/data.sql
+    data: classpath:db/data.sql
 
 
 # Show or not log for each sql query
@@ -50,5 +50,3 @@ spring:
     console:
       settings.web-allow-others: true
       enabled: true
-
-

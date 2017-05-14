@@ -1,5 +1,6 @@
 package cn.superliar.service.impl;
 
+import cn.superliar.service.CommentService;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -8,5 +9,5 @@ import org.springframework.transaction.annotation.Transactional;
  */
 @Service("commentService")
 @Transactional(rollbackFor = { Exception.class })
-public class CommentServiceImpl {
+public class CommentServiceImpl implements CommentService{
 }

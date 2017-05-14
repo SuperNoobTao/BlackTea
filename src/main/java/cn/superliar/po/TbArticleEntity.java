@@ -16,7 +16,7 @@ import java.sql.Timestamp;
 @Entity(name = "article")
 @Data
 @ToString(callSuper = true)
-@Table(name = "tb_article", schema = "blacktea_blog", catalog = "")
+@Table(name = "tb_article")
 public class TbArticleEntity {
     private long id;
     private String name;
@@ -28,6 +28,8 @@ public class TbArticleEntity {
     private String updatedBy;
 
     @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE,generator="article_seq")
+    @SequenceGenerator(name="article_seq", sequenceName="seq_article",initialValue=10000000,allocationSize=1)
     @Column(name = "article_id")
     public long getId() {
         return id;

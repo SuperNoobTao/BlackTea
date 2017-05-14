@@ -11,7 +11,7 @@ import javax.persistence.*;
 @Entity(name = "Statistics")
 @Data
 @ToString(callSuper = true)
-@Table(name = "tb_statistics", schema = "blacktea_blog", catalog = "")
+@Table(name = "tb_statistics")
 public class TbStatisticsEntity {
     private long id;
     private Integer articleId;
@@ -19,6 +19,8 @@ public class TbStatisticsEntity {
     private String upvote;
 
     @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE,generator="article_seq")
+    @SequenceGenerator(name="article_seq", sequenceName="seq_article",initialValue=10000000,allocationSize=1)
     @Column(name = "statistics_id")
     public long getId() {
         return id;

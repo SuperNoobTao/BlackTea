@@ -1,5 +1,6 @@
 package cn.superliar.service.impl;
 
+import cn.superliar.service.StatisticsService;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -8,5 +9,5 @@ import org.springframework.transaction.annotation.Transactional;
  */
 @Service("statisticsService")
 @Transactional(rollbackFor = { Exception.class })
-public class StatisticsServiceImpl {
+public class StatisticsServiceImpl implements StatisticsService{
 }

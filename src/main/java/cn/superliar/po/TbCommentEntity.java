@@ -16,7 +16,7 @@ import java.sql.Timestamp;
 @Entity(name = "Comment")
 @Data
 @ToString(callSuper = true)
-@Table(name = "tb_comment", schema = "blacktea_blog", catalog = "")
+@Table(name = "tb_comment")
 public class TbCommentEntity {
     private long id;
     private String content;
@@ -27,6 +27,8 @@ public class TbCommentEntity {
     private Timestamp updatedDate;
 
     @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE,generator="article_seq")
+    @SequenceGenerator(name="article_seq", sequenceName="seq_article",initialValue=10000000,allocationSize=1)
     @Column(name = "comment_id")
     public long getId() {
         return id;

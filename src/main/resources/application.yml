@@ -26,7 +26,11 @@ jedis:
 logging.file: data/logs/core.log
 
 
-# mybatis
+# mybatis 不用配置文件配置
+#mybatis:
+#  mapperLocations: classpath:mapper/*.xml
+#  typeAliasesPackage: cn.superliar.po
+
+# mybatis 使用配置文件配置
 mybatis:
-  mapperLocations: classpath:mybatis/*.xml
-  typeAliasesPackage: cn.superliar.po
+ config-location: classpath:mybatis-config.xml
