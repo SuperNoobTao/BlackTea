@@ -1,12 +1,16 @@
 package cn.superliar.po;
 
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 import lombok.ToString;
 import org.springframework.data.annotation.CreatedBy;
 import org.springframework.data.annotation.CreatedDate;
+import org.springframework.data.annotation.LastModifiedDate;
 
 import javax.persistence.*;
 import java.sql.Timestamp;
+import java.time.LocalDateTime;
 
 /**
  * Created by Administrator on 2017/5/13.
@@ -15,87 +19,42 @@ import java.sql.Timestamp;
 @Data
 @ToString(callSuper = true)
 @Table(name = "tb_log")
+@Setter
+@Getter
 public class TbLogEntity {
-    private long id;
-    private String ip;
-    private Integer userId;
-    private String userName;
-    private String acessResource;
-    private String operationType;
-    private Timestamp createdDate;
+
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE,generator="article_seq")
-    @SequenceGenerator(name="article_seq", sequenceName="seq_article",initialValue=10000000,allocationSize=1)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE,generator="log_seq")
+    @SequenceGenerator(name="log_seq", sequenceName="seq_log",initialValue=10000000,allocationSize=1)
     @Column(name = "log_id")
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long logId) {
-        this.id = logId;
-    }
+    private long id;
 
     @Basic
     @Column(name = "log_ip")
-    public String getIp() {
-        return ip;
-    }
-
-    public void setIp(String logIp) {
-        this.ip = logIp;
-    }
+    private String ip;
 
     @Basic
     @Column(name = "log_user_id")
-    public Integer getUserId() {
-        return userId;
-    }
-
-    public void setUserId(Integer logUserId) {
-        this.userId = logUserId;
-    }
+    private Integer userId;
 
     @Basic
     @Column(name = "log_user_name")
-    public String getUserName() {
-        return userName;
-    }
-
-    public void setUserName(String logUserName) {
-        this.userName = logUserName;
-    }
+    private String userName;
 
     @Basic
     @Column(name = "log_acess_resource")
-    public String getAcessResource() {
-        return acessResource;
-    }
-
-    public void setAcessResource(String logAcessResource) {
-        this.acessResource = logAcessResource;
-    }
+    private String acessResource;
 
     @Basic
     @Column(name = "log_operation_type")
-    public String getOperationType() {
-        return operationType;
-    }
-
-    public void setOperationType(String logOperationType) {
-        this.operationType = logOperationType;
-    }
+    private String operationType;
 
     @Basic
     @CreatedDate
-    @Column(name = "log_created_date")
-    public Timestamp getCreatedDate() {
-        return createdDate;
-    }
+    @Column(name = "created_date")
+    private LocalDateTime createdDate = LocalDateTime.now();
 
-    public void setCreatedDate(Timestamp logCreatedDate) {
-        this.createdDate = logCreatedDate;
-    }
 
     @Override
     public boolean equals(Object o) {

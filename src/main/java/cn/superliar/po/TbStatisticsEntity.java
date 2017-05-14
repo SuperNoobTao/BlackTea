@@ -1,6 +1,8 @@
 package cn.superliar.po;
 
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 import lombok.ToString;
 
 import javax.persistence.*;
@@ -12,53 +14,29 @@ import javax.persistence.*;
 @Data
 @ToString(callSuper = true)
 @Table(name = "tb_statistics")
+@Setter
+@Getter
 public class TbStatisticsEntity {
-    private long id;
-    private Integer articleId;
-    private String readCount;
-    private String upvote;
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE,generator="article_seq")
-    @SequenceGenerator(name="article_seq", sequenceName="seq_article",initialValue=10000000,allocationSize=1)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE,generator="statistics_seq")
+    @SequenceGenerator(name="statistics_seq", sequenceName="seq_statistics",initialValue=10000000,allocationSize=1)
     @Column(name = "statistics_id")
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long statisticsId) {
-        this.id = statisticsId;
-    }
+    private long id;
 
     @Basic
     @Column(name = "article_id")
-    public Integer getArticleId() {
-        return articleId;
-    }
-
-    public void setArticleId(Integer articleId) {
-        this.articleId = articleId;
-    }
+    private Integer articleId;
 
     @Basic
     @Column(name = "read_count")
-    public String getReadCount() {
-        return readCount;
-    }
-
-    public void setReadCount(String readCount) {
-        this.readCount = readCount;
-    }
+    private String readCount;
 
     @Basic
     @Column(name = "upvote")
-    public String getUpvote() {
-        return upvote;
-    }
+    private String upvote;
 
-    public void setUpvote(String upvote) {
-        this.upvote = upvote;
-    }
+
 
     @Override
     public boolean equals(Object o) {

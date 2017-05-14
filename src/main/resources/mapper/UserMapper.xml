@@ -12,10 +12,10 @@
         <result column="user_name" property="name" />
         <result column="user_pwd" property="pwd" />
         <result column="user_account" property="account" />
-        <result column="user_created_by" property="createdBy" />
-        <result column="user_updated_by" property="updatedBy" />
-        <result column="user_created_date" property="createdDate" />
-        <result column="user_updated_date" property="updatedDate" />
+        <result column="created_by" property="createdBy" />
+        <result column="updated_by" property="updatedBy" />
+        <result column="created_date"  property="createdDate" />
+        <result column="updated_date"  property="createdDate" />
     </resultMap>
 
     <select id="listUser" resultMap="businessSystemBaseProperty">

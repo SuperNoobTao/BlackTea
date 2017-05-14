@@ -1,11 +1,27 @@
 package cn.superliar.common;
 
+import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
+import org.springframework.data.annotation.CreatedBy;
+import org.springframework.data.annotation.CreatedDate;
+import org.springframework.data.annotation.LastModifiedBy;
+import org.springframework.data.annotation.LastModifiedDate;
+
+import javax.persistence.Basic;
+import javax.persistence.Column;
+import javax.persistence.MappedSuperclass;
 import java.io.Serializable;
+import java.time.LocalDateTime;
 import java.util.Date;
 
 /**
  * Created by Administrator on 2017/5/8.
  */
+@MappedSuperclass
+@Getter
+@Setter
+@Data
 public class BaseEntity implements Serializable {
 
     /**
@@ -16,55 +32,34 @@ public class BaseEntity implements Serializable {
     /**
      * 创建时间
      */
-    private Date createdDate;
+    @Basic
+    @CreatedDate
+    @Column(name = "created_date")
+    private LocalDateTime createdDate = LocalDateTime.now();
 
     /**
      * 修改时间
      */
-    private Date updatedDate;
+    @Basic
+    @LastModifiedDate
+    @Column(name = "updated_date")
+    private LocalDateTime updatedDate = LocalDateTime.now();
 
     /**
      * 创建人
      */
-    private Long userId;
+    @Basic
+    @CreatedBy
+    @Column(name = "created_by")
+    private Long createdBy;
 
     /**
      * 修改人
      */
-    private Long operationerId;
-
-
-    public Date getCreatedDate() {
-        return createdDate;
-    }
-
-    public void setCreatedDate(Date createdDate) {
-        this.createdDate = createdDate;
-    }
-
-    public Date getUpdatedDate() {
-        return updatedDate;
-    }
-
-    public void setUpdatedDate(Date updatedDate) {
-        this.updatedDate = updatedDate;
-    }
-
-    public Long getUserId() {
-        return userId;
-    }
-
-    public void setUserId(Long userId) {
-        this.userId = userId;
-    }
-
-    public Long getOperationerId() {
-        return operationerId;
-    }
-
-    public void setOperationerId(Long operationerId) {
-        this.operationerId = operationerId;
-    }
+    @Basic
+    @LastModifiedBy
+    @Column(name = "updated_by")
+    private Long updatedBy;
 
 
 

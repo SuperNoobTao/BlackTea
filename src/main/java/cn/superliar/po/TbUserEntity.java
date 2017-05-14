@@ -1,6 +1,10 @@
 package cn.superliar.po;
 
+import cn.superliar.common.BaseEntity;
+import com.fasterxml.jackson.databind.ser.Serializers;
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 import lombok.ToString;
 import org.springframework.data.annotation.CreatedBy;
 import org.springframework.data.annotation.CreatedDate;
@@ -9,6 +13,7 @@ import org.springframework.data.annotation.LastModifiedDate;
 
 import javax.persistence.*;
 import java.sql.Timestamp;
+import java.time.LocalDateTime;
 
 /**
  * Created by Administrator on 2017/5/13.
@@ -17,101 +22,30 @@ import java.sql.Timestamp;
 @Data
 @ToString(callSuper = true)
 @Table(name = "tb_user")
-public class TbUserEntity {
-    private long id;
-    private String name;
-    private String pwd;
-    private String account;
-    private String createdBy;
-    private String updatedBy;
-    private Timestamp createdDate;
-    private Timestamp updatedDate;
+@Getter
+@Setter
+public class TbUserEntity{
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE,generator="article_seq")
-    @SequenceGenerator(name="article_seq", sequenceName="seq_article",initialValue=10000000,allocationSize=1)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE,generator="user_seq")
+    @SequenceGenerator(name="user_seq", sequenceName="user_article",initialValue=10000000,allocationSize=1)
     @Column(name = "user_id")
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long userId) {
-        this.id = userId;
-    }
+    private long id;
 
     @Basic
     @Column(name = "user_name")
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String userName) {
-        this.name = userName;
-    }
+    private String name;
 
     @Basic
     @Column(name = "user_pwd")
-    public String getPwd() {
-        return pwd;
-    }
-
-    public void setPwd(String userPwd) {
-        this.pwd = userPwd;
-    }
+    private String pwd;
 
     @Basic
     @Column(name = "user_account")
-    public String getAccount() {
-        return account;
-    }
+    private String account;
 
-    public void setAccount(String userAccount) {
-        this.account = userAccount;
-    }
 
-    @Basic
-    @CreatedBy
-    @Column(name = "user_created_by")
-    public String getCreatedBy() {
-        return createdBy;
-    }
 
-    public void setCreatedBy(String tagCreatedBy) {
-        this.createdBy = tagCreatedBy;
-    }
-
-    @Basic
-    @LastModifiedBy
-    @Column(name = "user_updated_by")
-    public String getUpdatedBy() {
-        return updatedBy;
-    }
-
-    public void setUpdatedBy(String userUpdatedBy) {
-        this.updatedBy = userUpdatedBy;
-    }
-
-    @Basic
-    @CreatedDate
-    @Column(name = "user_created_date")
-    public Timestamp getCreatedDate() {
-        return createdDate;
-    }
-
-    public void setCreatedDate(Timestamp userCreatedDate) {
-        this.createdDate = userCreatedDate;
-    }
-
-    @Basic
-    @LastModifiedDate
-    @Column(name = "user_updated_date")
-    public Timestamp getUpdatedDate() {
-        return updatedDate;
-    }
-
-    public void setUpdatedDate(Timestamp userUpdatedDate) {
-        this.updatedDate = userUpdatedDate;
-    }
 
 
 
