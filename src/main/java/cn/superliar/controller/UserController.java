@@ -4,9 +4,12 @@ package cn.superliar.controller;
 
 import java.util.*;
 
+import cn.superliar.mapper.UserMapper;
 import cn.superliar.po.TbUserEntity;
 import cn.superliar.po.User;
 import cn.superliar.service.UserService;
+import com.baomidou.mybatisplus.mapper.EntityWrapper;
+import com.baomidou.mybatisplus.plugins.Page;
 import io.swagger.annotations.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -19,11 +22,16 @@ import org.slf4j.LoggerFactory;
 public class UserController {
 
     static Map<Long, User> users = Collections.synchronizedMap(new HashMap<Long, User>());
+    @Autowired
+    UserService userService;
+
+
 
     @ApiOperation(value="获取用户列表", notes="")
     @RequestMapping(value={""}, method=RequestMethod.GET)
-    public List<User> getUserList() {
-        List<User> r = new ArrayList<User>(users.values());
+    public List<TbUserEntity> getUserList() {
+
+        List<TbUserEntity> r = userService.listUser();
         return r;
     }
 
@@ -63,5 +71,23 @@ public class UserController {
         users.remove(id);
         return "success";
     }
+
+
+
+    /**
+     * 增删改查 CRUD
+     */
+    @GetMapping("/test2")
+    public TbUserEntity test2() {
+
+        System.err.println("插入一条数据：" + userService.insert(new TbUserEntity(1L,"张三","111", "admin")));
+        TbUserEntity user = new TbUserEntity(2L,"张三","111", "admin");
+        boolean result = userService.insert(user);
+        // 自动回写的ID
+
+
+        return userService.selectById(1L);
+    }
+
 
 }

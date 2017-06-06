@@ -5,10 +5,10 @@ import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
-import org.springframework.data.annotation.CreatedBy;
-import org.springframework.data.annotation.CreatedDate;
-import org.springframework.data.annotation.LastModifiedBy;
-import org.springframework.data.annotation.LastModifiedDate;
+//import org.springframework.data.annotation.CreatedBy;
+//import org.springframework.data.annotation.CreatedDate;
+//import org.springframework.data.annotation.LastModifiedBy;
+//import org.springframework.data.annotation.LastModifiedDate;
 
 import javax.persistence.*;
 import java.sql.Timestamp;
@@ -16,31 +16,31 @@ import java.sql.Timestamp;
 /**
  * Created by Administrator on 2017/5/13.
  */
-@Entity(name = "article")
+//@Entity(name = "article")
 @Data
 @ToString(callSuper = true)
-@Table(name = "tb_article")
+//@Table(name = "tb_article")
 @Setter
 @Getter
 public class TbArticleEntity extends BaseEntity{
 
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE,generator="article_seq")
-    @SequenceGenerator(name="article_seq", sequenceName="seq_article",initialValue=10000000,allocationSize=1)
-    @Column(name = "article_id")
+//    @Id
+//    @GeneratedValue(strategy = GenerationType.SEQUENCE,generator="article_seq")
+//    @SequenceGenerator(name="article_seq", sequenceName="seq_article",initialValue=10000000,allocationSize=1)
+//    @Column(name = "article_id")
     private long id;
 
-    @Basic
-    @Column(name = "article_name")
+//    @Basic
+//    @Column(name = "article_name")
     private String name;
 
-    @Basic
-    @Column(name = "article_tag")
+//    @Basic
+//    @Column(name = "article_tag")
     private String tag;
 
-    @Basic
-    @Column(name = "article_content")
+//    @Basic
+//    @Column(name = "article_content")
     private String content;
 
 

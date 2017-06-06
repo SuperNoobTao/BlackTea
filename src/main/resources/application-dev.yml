@@ -23,26 +23,28 @@ spring:
           num-tests-per-eviction-run: 10
           remove-abandoned: true
           remove-abandoned-timeout: 180
-#    schema: classpath:db/blacktea_blog.sql
+    schema: classpath:db/blacktea_blog.sql
     data: classpath:db/data.sql
 
 
-# Show or not log for each sql query
-  jpa:
-    show-sql: true
-# Hibernate ddl auto (create, create-drop, update): with "update" the database
-# schema will be automatically updated accordingly to java entities found in
-# the project
-    hibernate:
-      ddl-auto: update
-      naming:
-        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
-    properties:
-      hibernate:
-        format_sql: true
-        generate_statistics: true
-# h2
-      dialect: org.hibernate.dialect.H2Dialect
+#目前jpa注释掉 - 项目用的是mybatis&mybatis-plus
+
+## Show or not log for each sql query
+#  jpa:
+#    show-sql: true
+## Hibernate ddl auto (create, create-drop, update): with "update" the database
+## schema will be automatically updated accordingly to java entities found in
+## the project
+#    hibernate:
+#      ddl-auto: update
+#      naming:
+#        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
+#    properties:
+#      hibernate:
+#        format_sql: true
+#        generate_statistics: true
+## h2
+#      dialect: org.hibernate.dialect.H2Dialect
 
 
 # h2配置

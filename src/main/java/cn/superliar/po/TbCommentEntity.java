@@ -5,10 +5,10 @@ import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
-import org.springframework.data.annotation.CreatedBy;
-import org.springframework.data.annotation.CreatedDate;
-import org.springframework.data.annotation.LastModifiedBy;
-import org.springframework.data.annotation.LastModifiedDate;
+//import org.springframework.data.annotation.CreatedBy;
+//import org.springframework.data.annotation.CreatedDate;
+//import org.springframework.data.annotation.LastModifiedBy;
+//import org.springframework.data.annotation.LastModifiedDate;
 
 import javax.persistence.*;
 import java.sql.Timestamp;
@@ -16,26 +16,26 @@ import java.sql.Timestamp;
 /**
  * Created by Administrator on 2017/5/13.
  */
-@Entity(name = "Comment")
+//@Entity(name = "Comment")
 @Data
 @ToString(callSuper = true)
-@Table(name = "tb_comment")
+//@Table(name = "tb_comment")
 @Setter
 @Getter
 public class TbCommentEntity extends BaseEntity{
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE,generator="comment_seq")
-    @SequenceGenerator(name="comment_seq", sequenceName="seq_comment",initialValue=10000000,allocationSize=1)
-    @Column(name = "comment_id")
+//    @Id
+//    @GeneratedValue(strategy = GenerationType.SEQUENCE,generator="comment_seq")
+//    @SequenceGenerator(name="comment_seq", sequenceName="seq_comment",initialValue=10000000,allocationSize=1)
+//    @Column(name = "comment_id")
     private long id;
 
-    @Basic
-    @Column(name = "comment_content")
+//    @Basic
+//    @Column(name = "comment_content")
     private String content;
 
-    @Basic
-    @Column(name = "comment_user_id")
+//    @Basic
+//    @Column(name = "comment_user_id")
     private Integer userId;
 
 

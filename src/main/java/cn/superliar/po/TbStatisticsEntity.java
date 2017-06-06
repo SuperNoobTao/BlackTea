@@ -10,30 +10,30 @@ import javax.persistence.*;
 /**
  * Created by Administrator on 2017/5/13.
  */
-@Entity(name = "Statistics")
+//@Entity(name = "Statistics")
 @Data
 @ToString(callSuper = true)
-@Table(name = "tb_statistics")
+//@Table(name = "tb_statistics")
 @Setter
 @Getter
 public class TbStatisticsEntity {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE,generator="statistics_seq")
-    @SequenceGenerator(name="statistics_seq", sequenceName="seq_statistics",initialValue=10000000,allocationSize=1)
-    @Column(name = "statistics_id")
+//    @Id
+//    @GeneratedValue(strategy = GenerationType.SEQUENCE,generator="statistics_seq")
+//    @SequenceGenerator(name="statistics_seq", sequenceName="seq_statistics",initialValue=10000000,allocationSize=1)
+//    @Column(name = "statistics_id")
     private long id;
 
-    @Basic
-    @Column(name = "article_id")
+//    @Basic
+//    @Column(name = "article_id")
     private Integer articleId;
 
-    @Basic
-    @Column(name = "read_count")
+//    @Basic
+//    @Column(name = "read_count")
     private String readCount;
 
-    @Basic
-    @Column(name = "upvote")
+//    @Basic
+//    @Column(name = "upvote")
     private String upvote;
 
 

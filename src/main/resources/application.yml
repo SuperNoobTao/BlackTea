@@ -34,3 +34,17 @@ logging.file: data/logs/core.log
 # mybatis 使用配置文件配置
 mybatis:
  config-location: classpath:mybatis-config.xml
+
+#mybatis
+mybatis-plus:
+  mapper-locations: classpath:/mapper/*Mapper.xml
+  typeAliasesPackage: cn.superliar.po
+  global-config:
+    id-type: 2
+    field-strategy: 2
+    auto-set-db-type: true
+    db-column-underline: true
+    refresh-mapper: true
+  configuration:
+    map-underscore-to-camel-case: true
+    cache-enabled: false
